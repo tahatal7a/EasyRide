@@ -1,31 +1,31 @@
 import React from "react";
 
-import HeroSlider from "../components/UI/HeroSlider";
+import HeroSliderfr from "../components/UI/HeroSliderfr";
 import Helmet from "../components/Helmet/Helmet";
 
 import { Container, Row, Col } from "reactstrap";
 import FindCarForm from "../components/UI/FindCarForm";
-import AboutSection from "../components/UI/AboutSection";
+import AboutSectionfr from "../components/UI/AboutSectionfr";
 import ServicesList from "../components/UI/ServicesList";
 import carData from "../assets/data/carData";
 import CarItem from "../components/UI/CarItem";
-import BecomeDriverSection from "../components/UI/BecomeDriverSection";
-import Testimonial from "../components/UI/Testimonial";
+import BecomeDriverSectionfr from "../components/UI/BecomeDriverSectionfr";
+import Testimonialfr from "../components/UI/Testimonialfr";
 
 
-const Home = () => {
+const Homefr = () => {
   return (
-    <Helmet title="Home">
+    <Helmet title="Homefr">
       {/* ============= section =========== */}
       <section className="p-0 hero__slider-section">
-        <HeroSlider />
+        <HeroSliderfr />
 
         <div className="hero__form">
           <Container>
             <Row className="form__row">
               <Col lg="4" md="4">
                 <div className="find__cars-left">
-                  <h2>Find your best car here</h2>
+                  <h2>Trouvez votre meilleure voiture ici</h2>
                 </div>
               </Col>
 
@@ -37,14 +37,14 @@ const Home = () => {
         </div>
       </section>
       {/* =========== about section ================ */}
-      <AboutSection />
+      <AboutSectionfr />
       {/* ========== services section ============ */}
       <section>
         <Container>
           <Row>
             <Col lg="12" className="mb-5 text-center">
-              <h6 className="section__subtitle">See our</h6>
-              <h2 className="section__title">Popular Services</h2>
+              <h6 className="section__subtitle">Voir notre</h6>
+              <h2 className="section__title">Services populaires</h2>
             </Col>
 
             <ServicesList />
@@ -56,8 +56,8 @@ const Home = () => {
         <Container>
           <Row>
             <Col lg="12" className="text-center mb-5">
-              <h6 className="section__subtitle">Come with</h6>
-              <h2 className="section__title">Hot Offers</h2>
+              <h6 className="section__subtitle">Viens avec</h6>
+              <h2 className="section__title">Offres spéciales</h2>
             </Col>
 
             {carData.slice(0, 6).map((item) => (
@@ -67,18 +67,18 @@ const Home = () => {
         </Container>
       </section>
       {/* =========== become a driver section ============ */}
-      <BecomeDriverSection />
+      <BecomeDriverSectionfr />
 
-      {/* =========== testimonial section =========== */}
+      {/* =========== testimonialfr section =========== */}
       <section>
         <Container>
           <Row>
             <Col lg="12" className="mb-4 text-center">
-              <h6 className="section__subtitle">Our clients says</h6>
-              <h2 className="section__title">Testimonials</h2>
+              <h6 className="section__subtitle">Nos clients disent</h6>
+              <h2 className="section__title">Témoignages</h2>
             </Col>
 
-            <Testimonial />
+            <Testimonialfr />
           </Row>
         </Container>
       </section>
@@ -87,4 +87,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Homefr;

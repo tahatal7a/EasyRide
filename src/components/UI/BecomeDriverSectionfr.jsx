@@ -4,7 +4,7 @@ import { Container, Row, Col } from "reactstrap";
 
 import driverImg from "../../assets/all-images/toyota-offer-2.png";
 
-const BecomeDriverSection = () => {
+const BecomeDriverSectionfr = () => {
   return (
     <section className="become__driver">
       <Container>
@@ -15,7 +15,7 @@ const BecomeDriverSection = () => {
 
           <Col lg="6" md="6" sm="12">
             <h2 className="section__title become__driver-title">
-              Do You Want to Earn With Us? So Don't Be Late
+            Voulez-vous gagner avec nous ? Alors ne sois pas en retard
             </h2>
 
             <button className="btn become__driver-btn mt-4">
@@ -28,4 +28,4 @@ const BecomeDriverSection = () => {
   );
 };
 
-export default BecomeDriverSection;
+export default BecomeDriverSectionfr;
